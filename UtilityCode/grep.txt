@@ -1,0 +1,32 @@
+1. Search for the given string in a single file
+	
+		grep "this" demo_file
+		
+2. Checking for the given string in multiple files.
+
+		grep "this" demo_*
+		
+3. Case insensitive search using grep -i
+
+		grep -i "string" FILE
+		
+4. Match regular expression in files
+
+		grep "lines.*empty" demo_file
+		
+5. Checking for full words, not for sub-strings using grep -w		
+
+		grep -iw "is" demo_file
+		
+6.1 Display N lines after match
+
+		grep -A 3 -i "example" demo_text
+		
+6.2 Display N lines before match
+
+		grep -B 2 "single WORD" demo_text
+		
+7. Searching in all files recursively using grep -r
+	
+		grep -r "text" *
+		
