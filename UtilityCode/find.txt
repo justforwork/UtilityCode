@@ -1,0 +1,3 @@
+1. Finds all the files (under root file system /) that got updated within the last 24 hours (1 day).
+
+	# find / -mtime -1	
